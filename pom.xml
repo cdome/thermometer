@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.vendavo.interview</groupId>
+    <artifactId>thermometer-parent</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>thermometer</module>
+        <!--<module>thermometer-solution</module>-->
+    </modules>
+
+    <properties>
+        <elasticsearch.version>1.5.0</elasticsearch.version>
+        <java.version>1.7</java.version>
+
+        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+        <groovy.version>2.4.3</groovy.version>
+        <groovy.eclipse.compiler.version>2.9.2-01</groovy.eclipse.compiler.version>
+        <groovy-eclipse-batch.version>2.4.3-01</groovy-eclipse-batch.version>
+        <spock.version>1.0-groovy-2.4</spock.version>
+    </properties>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy-all</artifactId>
+                <version>${groovy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
