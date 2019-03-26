@@ -1,4 +1,5 @@
 rootProject.name = 'Interview'
 
-include 'thermometer'
+include 'thermometer-api'
+include 'thermometer-imp'
 
