@@ -3,3 +3,5 @@
 *.iml
 thermometer/build/
 thermometer/target/
+thermometer-api/build
+thermometer-impl/build
